@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ uid -ne 0]
+if [ uid -ne 0 ]
 then
     echo "exit 1"
 else
@@ -9,7 +9,7 @@ fi
 
 dnf install mysql -y
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
     echo "exit 1"
 else
@@ -18,7 +18,7 @@ fi
 
 dnf install git -y
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
     echo "exit 1"
 else

@@ -17,9 +17,10 @@ then
         exit 1
     else
         echo "Install Mysql.....SUCCESS"
+    fi
 else
     echo "MYSQL already Installed .... SUCCESS"
-
+fi
 
 dnf list installed git
 if [ $? -ne 0 ]

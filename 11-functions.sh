@@ -6,6 +6,7 @@ if [ $user -ne 0 ]
 then 
     echo "This needs to be executed as a root user"
     exit 1
+fi
 
 VALIDATE () {
 if [ $1 -ne 0 ]
@@ -33,4 +34,4 @@ dnf install git -y
     VALIDATE $? "git is installing"
 else
     echo "already installed"
-fi    
+fi

@@ -1,6 +1,7 @@
 #!/bin/bash
+USERID=$(id u)
 
-if [ id -ne 0 ]
+if [ $USERID -ne 0 ]
 then
     exit 1
 else

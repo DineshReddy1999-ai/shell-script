@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ uid -ne 0 ]
+if [ id -ne 0 ]
 then
     echo "exit 1"
 else

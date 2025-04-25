@@ -6,8 +6,9 @@ if [ $user -ne 0 ]
 then 
     echo "This needs to be executed as a root user"
     exit 1
+
 VALIDATE () {
-    if [ $1 -ne 0 ]
+if [ $1 -ne 0 ]
     then
         echo "$2"
         exit 1
@@ -21,6 +22,9 @@ if [ $? -ne 0 ]
 then 
 dnf install mysql -y
     VALIDATE $? "mysql is installing"
+else
+    echo "already installed"
+fi    
 
 dnf list installed git -y
 if [ $? -ne 0 ]

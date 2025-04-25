@@ -5,4 +5,4 @@ echo "please enter your username ::"
 read -s USERNAME
 echo "username entered is :: $USERNAME"
 echo "please enter your password ::"
-read -S PASSWORD
+read -s PASSWORD

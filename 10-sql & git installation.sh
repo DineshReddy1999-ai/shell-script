@@ -3,9 +3,8 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
+    echo "This command needs to be executed with root user"
     exit 1
-else
-    echo "Execute with root"
 fi
 
 dnf install mysql -y

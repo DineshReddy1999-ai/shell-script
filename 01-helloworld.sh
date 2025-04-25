@@ -1,1 +1,3 @@
-echo "Hi Devops, I am trying to master you"
+#!/bin/bash
+
+echo "Hi Devops, I am tryin to master you"
